@@ -1,6 +1,6 @@
 /**
 	@file dados.h
-	@title fichero .h con la clase Dados.
+	@title fichero .h con la definicion de la clase Dados.
 	@version 1.0
 	@date 24/09/2020
 	@author ssCuacKss
