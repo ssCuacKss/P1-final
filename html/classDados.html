@@ -163,7 +163,15 @@ Atributos privados</h2></td></tr>
 
 <p>constructor de la clase dados </p>
 <p>Al declarar una variable de la clase <a class="el" href="classDados.html" title="clase Dados ">Dados</a>, el constructor asigna a d1_ y d2_ el valor 1 al d1_Lanzamientos y d2_Lanzamientos les asigna el valor 0, le asigna 0 a la suma historica de los valores de los dados y rellena con ceros los elementos del los vectores que guardan los ultimos 5 valores de los dados, ademas genera la semilla para el lanzamiento de los dados. </p>
-
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a>=<a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a>=1;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">d1_Lanzamientos</a>=<a class="code" href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">d2_Lanzamientos</a>=0;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classDados.html#a953c93884000f149366557eef5d18c95">d1_sum_valores</a>=<a class="code" href="classDados.html#aeaf150f98d9b78d78f33c916fb6e16d0">d2_sum_valores</a>=0;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;5;i++){</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classDados.html#ad5a06b29a425c77a0a7850b12393948f">ultimos5D1</a>[i]=<a class="code" href="classDados.html#a98309ff6e2cd0f3f37eaf6cbabf8f174">ultimos5D2</a>[i]=0;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    srand(time(NULL));</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div><div class="ttc" id="classDados_html_a817e5722203b5b4bb97bdea494266435"><div class="ttname"><a href="classDados.html#a817e5722203b5b4bb97bdea494266435">Dados::d1_</a></div><div class="ttdeci">int d1_</div><div class="ttdef"><b>Definition:</b> dados.h:20</div></div>
+<div class="ttc" id="classDados_html_ad5a06b29a425c77a0a7850b12393948f"><div class="ttname"><a href="classDados.html#ad5a06b29a425c77a0a7850b12393948f">Dados::ultimos5D1</a></div><div class="ttdeci">int ultimos5D1[5]</div><div class="ttdef"><b>Definition:</b> dados.h:26</div></div>
+<div class="ttc" id="classDados_html_ae33b579edb1e1cc50857d689bb4029d8"><div class="ttname"><a href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">Dados::d2_Lanzamientos</a></div><div class="ttdeci">int d2_Lanzamientos</div><div class="ttdef"><b>Definition:</b> dados.h:23</div></div>
+<div class="ttc" id="classDados_html_a98309ff6e2cd0f3f37eaf6cbabf8f174"><div class="ttname"><a href="classDados.html#a98309ff6e2cd0f3f37eaf6cbabf8f174">Dados::ultimos5D2</a></div><div class="ttdeci">int ultimos5D2[5]</div><div class="ttdef"><b>Definition:</b> dados.h:27</div></div>
+<div class="ttc" id="classDados_html_a2da5da0bfa4710efa1bb8980147cace0"><div class="ttname"><a href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">Dados::d1_Lanzamientos</a></div><div class="ttdeci">int d1_Lanzamientos</div><div class="ttdef"><b>Definition:</b> dados.h:22</div></div>
+<div class="ttc" id="classDados_html_a953c93884000f149366557eef5d18c95"><div class="ttname"><a href="classDados.html#a953c93884000f149366557eef5d18c95">Dados::d1_sum_valores</a></div><div class="ttdeci">int d1_sum_valores</div><div class="ttdef"><b>Definition:</b> dados.h:24</div></div>
+<div class="ttc" id="classDados_html_a6c49b0383fc4a5defe3b9613519d58b6"><div class="ttname"><a href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">Dados::d2_</a></div><div class="ttdeci">int d2_</div><div class="ttdef"><b>Definition:</b> dados.h:21</div></div>
+<div class="ttc" id="classDados_html_aeaf150f98d9b78d78f33c916fb6e16d0"><div class="ttname"><a href="classDados.html#aeaf150f98d9b78d78f33c916fb6e16d0">Dados::d2_sum_valores</a></div><div class="ttdeci">int d2_sum_valores</div><div class="ttdef"><b>Definition:</b> dados.h:25</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de las funciones miembro</h2>
@@ -184,7 +192,8 @@ Atributos privados</h2></td></tr>
 
 <p>devuelve el valor actual del dado 1 </p>
 <dl class="section return"><dt>Devuelve</dt><dd>devuelve el valor actual del dado 1 </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                   {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div><div class="ttc" id="classDados_html_a817e5722203b5b4bb97bdea494266435"><div class="ttname"><a href="classDados.html#a817e5722203b5b4bb97bdea494266435">Dados::d1_</a></div><div class="ttdeci">int d1_</div><div class="ttdef"><b>Definition:</b> dados.h:20</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acdd916942c773f821015883c9dc2d55d"></a>
@@ -204,7 +213,8 @@ Atributos privados</h2></td></tr>
 
 <p>devuelve el valor actual del dado 2 </p>
 <dl class="section return"><dt>Devuelve</dt><dd>devuelve el valor actual del dado 2 </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                   {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a>;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div><div class="ttc" id="classDados_html_a6c49b0383fc4a5defe3b9613519d58b6"><div class="ttname"><a href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">Dados::d2_</a></div><div class="ttdeci">int d2_</div><div class="ttdef"><b>Definition:</b> dados.h:21</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a02643a4390dc9d005090c3548a7a6cc7"></a>
@@ -224,7 +234,9 @@ Atributos privados</h2></td></tr>
 
 <p>devuelve la resta entre los valores de los dados 1 y 2 </p>
 <dl class="section return"><dt>Devuelve</dt><dd>devuelve la diferencia entre el mayor y menor valor de los dados </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                        {</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a>&lt;<a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a>){</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a> - <a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a>;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">else</span>{</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a> - <a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a>;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div><div class="ttc" id="classDados_html_a817e5722203b5b4bb97bdea494266435"><div class="ttname"><a href="classDados.html#a817e5722203b5b4bb97bdea494266435">Dados::d1_</a></div><div class="ttdeci">int d1_</div><div class="ttdef"><b>Definition:</b> dados.h:20</div></div>
+<div class="ttc" id="classDados_html_a6c49b0383fc4a5defe3b9613519d58b6"><div class="ttname"><a href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">Dados::d2_</a></div><div class="ttdeci">int d2_</div><div class="ttdef"><b>Definition:</b> dados.h:21</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a730df1b6945ddf2f9e1b4460574ef13f"></a>
@@ -244,7 +256,8 @@ Atributos privados</h2></td></tr>
 
 <p>devuelve la cantidad de lanzamientos que ha tenido el dado 1 </p>
 <dl class="section return"><dt>Devuelve</dt><dd>devuelve un entero con la cantidad de lanzamientos del dado 1 </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                           {</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">d1_Lanzamientos</a>;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div><div class="ttc" id="classDados_html_a2da5da0bfa4710efa1bb8980147cace0"><div class="ttname"><a href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">Dados::d1_Lanzamientos</a></div><div class="ttdeci">int d1_Lanzamientos</div><div class="ttdef"><b>Definition:</b> dados.h:22</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4a1128bcafbded7c59e59dd4308da1f3"></a>
@@ -264,7 +277,8 @@ Atributos privados</h2></td></tr>
 
 <p>devuelve la cantidad de lanzamientos que ha tenido el dado 2 </p>
 <dl class="section return"><dt>Devuelve</dt><dd>devuelve un entero con la cantidad de lanzamientos del dado 2 </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                           {</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">d2_Lanzamientos</a>;</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div><div class="ttc" id="classDados_html_ae33b579edb1e1cc50857d689bb4029d8"><div class="ttname"><a href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">Dados::d2_Lanzamientos</a></div><div class="ttdeci">int d2_Lanzamientos</div><div class="ttdef"><b>Definition:</b> dados.h:23</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0ab93b572a556aef7fe31cb62291c754"></a>
@@ -284,7 +298,9 @@ Atributos privados</h2></td></tr>
 
 <p>devuelve la media de valores del dado 1 </p>
 <dl class="section return"><dt>Devuelve</dt><dd>si no han habido lanzamientos, devuelve 0, en cualquier otro caso devuelve el cociente de la sumatoria historica de valores del dado 1 entre la cantidad de lanzamientos como un float </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                      {</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">d1_Lanzamientos</a>==0){</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">else</span>{</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)<a class="code" href="classDados.html#a953c93884000f149366557eef5d18c95">d1_sum_valores</a>/<a class="code" href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">d1_Lanzamientos</a>;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div><div class="ttc" id="classDados_html_a2da5da0bfa4710efa1bb8980147cace0"><div class="ttname"><a href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">Dados::d1_Lanzamientos</a></div><div class="ttdeci">int d1_Lanzamientos</div><div class="ttdef"><b>Definition:</b> dados.h:22</div></div>
+<div class="ttc" id="classDados_html_a953c93884000f149366557eef5d18c95"><div class="ttname"><a href="classDados.html#a953c93884000f149366557eef5d18c95">Dados::d1_sum_valores</a></div><div class="ttdeci">int d1_sum_valores</div><div class="ttdef"><b>Definition:</b> dados.h:24</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a098f1369ee82df1e5553b2225b2a7dea"></a>
@@ -304,7 +320,9 @@ Atributos privados</h2></td></tr>
 
 <p>devuelve la media de valores del dado 2 </p>
 <dl class="section return"><dt>Devuelve</dt><dd>si no han habido lanzamientos, devuelve 0, en cualquier otro caso devuelve el cociente de la sumatoria historica de valores del dado 2 entre la cantidad de lanzamientos como un float </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                      {</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">d2_Lanzamientos</a>==0){</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">else</span>{</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)<a class="code" href="classDados.html#aeaf150f98d9b78d78f33c916fb6e16d0">d2_sum_valores</a>/<a class="code" href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">d2_Lanzamientos</a>;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div><div class="ttc" id="classDados_html_ae33b579edb1e1cc50857d689bb4029d8"><div class="ttname"><a href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">Dados::d2_Lanzamientos</a></div><div class="ttdeci">int d2_Lanzamientos</div><div class="ttdef"><b>Definition:</b> dados.h:23</div></div>
+<div class="ttc" id="classDados_html_aeaf150f98d9b78d78f33c916fb6e16d0"><div class="ttname"><a href="classDados.html#aeaf150f98d9b78d78f33c916fb6e16d0">Dados::d2_sum_valores</a></div><div class="ttdeci">int d2_sum_valores</div><div class="ttdef"><b>Definition:</b> dados.h:25</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8e5c56b971b035017e692896b52c488a"></a>
@@ -324,7 +342,9 @@ Atributos privados</h2></td></tr>
 
 <p>realiza la suma de valores actuales del dado 1 y el dado 2 </p>
 <dl class="section return"><dt>Devuelve</dt><dd>devuelve la suma de valores del dado 1 y el dado 2 </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                  {</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a>+<a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a>;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div><div class="ttc" id="classDados_html_a817e5722203b5b4bb97bdea494266435"><div class="ttname"><a href="classDados.html#a817e5722203b5b4bb97bdea494266435">Dados::d1_</a></div><div class="ttdeci">int d1_</div><div class="ttdef"><b>Definition:</b> dados.h:20</div></div>
+<div class="ttc" id="classDados_html_a6c49b0383fc4a5defe3b9613519d58b6"><div class="ttname"><a href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">Dados::d2_</a></div><div class="ttdeci">int d2_</div><div class="ttdef"><b>Definition:</b> dados.h:21</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae13f9eaa7814cf56baa30a15a8b0a7c7"></a>
@@ -351,7 +371,8 @@ Atributos privados</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>no devuelve nada </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                              {</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;5;i++){</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        v[i]=<a class="code" href="classDados.html#ad5a06b29a425c77a0a7850b12393948f">ultimos5D1</a>[i];</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div><div class="ttc" id="classDados_html_ad5a06b29a425c77a0a7850b12393948f"><div class="ttname"><a href="classDados.html#ad5a06b29a425c77a0a7850b12393948f">Dados::ultimos5D1</a></div><div class="ttdeci">int ultimos5D1[5]</div><div class="ttdef"><b>Definition:</b> dados.h:26</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a771bd920ee113e394363563e0d543a74"></a>
@@ -378,7 +399,8 @@ Atributos privados</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>no devuelve nada </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                              {</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;5;i++){</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        v[i]=<a class="code" href="classDados.html#a98309ff6e2cd0f3f37eaf6cbabf8f174">ultimos5D2</a>[i];</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div><div class="ttc" id="classDados_html_a98309ff6e2cd0f3f37eaf6cbabf8f174"><div class="ttname"><a href="classDados.html#a98309ff6e2cd0f3f37eaf6cbabf8f174">Dados::ultimos5D2</a></div><div class="ttdeci">int ultimos5D2[5]</div><div class="ttdef"><b>Definition:</b> dados.h:27</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6b708478ff15b0ba446fd176924b2a4b"></a>
@@ -398,7 +420,15 @@ Atributos privados</h2></td></tr>
 
 <p>funcion que realiza el lanzamiento de los dados </p>
 <p>introduce un valor aletorio entre 1 y 6, ademas actualiza la suma de valores historicos, los lanzamientos y llama a <a class="el" href="classDados.html#a26a9218af6e7ed56510f048844fc4b98" title="actualiza los valores del vector que guarda los ultimos 5 lanzamientos del dado 1 ...">sync1()</a> y <a class="el" href="classDados.html#adac2f86ee0e27e174c8ee711acc442f5" title="actualiza los valores del vector que guarda los ultimos 5 lanzamientos del dado 2 ...">sync2()</a> para actualizar la lista de ultimos lanzamientos </p><dl class="section return"><dt>Devuelve</dt><dd>no devuelve nada </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                       {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a>=rand()%6+1;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a>=rand()%6+1;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classDados.html#a953c93884000f149366557eef5d18c95">d1_sum_valores</a>+=<a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classDados.html#aeaf150f98d9b78d78f33c916fb6e16d0">d2_sum_valores</a>+=<a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">d1_Lanzamientos</a>++;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">d2_Lanzamientos</a>++;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    this-&gt;<a class="code" href="classDados.html#a26a9218af6e7ed56510f048844fc4b98">sync1</a>();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    this-&gt;<a class="code" href="classDados.html#adac2f86ee0e27e174c8ee711acc442f5">sync2</a>();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div><div class="ttc" id="classDados_html_a817e5722203b5b4bb97bdea494266435"><div class="ttname"><a href="classDados.html#a817e5722203b5b4bb97bdea494266435">Dados::d1_</a></div><div class="ttdeci">int d1_</div><div class="ttdef"><b>Definition:</b> dados.h:20</div></div>
+<div class="ttc" id="classDados_html_ae33b579edb1e1cc50857d689bb4029d8"><div class="ttname"><a href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">Dados::d2_Lanzamientos</a></div><div class="ttdeci">int d2_Lanzamientos</div><div class="ttdef"><b>Definition:</b> dados.h:23</div></div>
+<div class="ttc" id="classDados_html_a2da5da0bfa4710efa1bb8980147cace0"><div class="ttname"><a href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">Dados::d1_Lanzamientos</a></div><div class="ttdeci">int d1_Lanzamientos</div><div class="ttdef"><b>Definition:</b> dados.h:22</div></div>
+<div class="ttc" id="classDados_html_a953c93884000f149366557eef5d18c95"><div class="ttname"><a href="classDados.html#a953c93884000f149366557eef5d18c95">Dados::d1_sum_valores</a></div><div class="ttdeci">int d1_sum_valores</div><div class="ttdef"><b>Definition:</b> dados.h:24</div></div>
+<div class="ttc" id="classDados_html_a6c49b0383fc4a5defe3b9613519d58b6"><div class="ttname"><a href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">Dados::d2_</a></div><div class="ttdeci">int d2_</div><div class="ttdef"><b>Definition:</b> dados.h:21</div></div>
+<div class="ttc" id="classDados_html_adac2f86ee0e27e174c8ee711acc442f5"><div class="ttname"><a href="classDados.html#adac2f86ee0e27e174c8ee711acc442f5">Dados::sync2</a></div><div class="ttdeci">void sync2()</div><div class="ttdoc">actualiza los valores del vector que guarda los ultimos 5 lanzamientos del dado 2 ...</div><div class="ttdef"><b>Definition:</b> dados.cc:113</div></div>
+<div class="ttc" id="classDados_html_a26a9218af6e7ed56510f048844fc4b98"><div class="ttname"><a href="classDados.html#a26a9218af6e7ed56510f048844fc4b98">Dados::sync1</a></div><div class="ttdeci">void sync1()</div><div class="ttdoc">actualiza los valores del vector que guarda los ultimos 5 lanzamientos del dado 1 ...</div><div class="ttdef"><b>Definition:</b> dados.cc:101</div></div>
+<div class="ttc" id="classDados_html_aeaf150f98d9b78d78f33c916fb6e16d0"><div class="ttname"><a href="classDados.html#aeaf150f98d9b78d78f33c916fb6e16d0">Dados::d2_sum_valores</a></div><div class="ttdeci">int d2_sum_valores</div><div class="ttdef"><b>Definition:</b> dados.h:25</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2c290571d4d61580e9c1c0b3c9c57393"></a>
@@ -425,7 +455,11 @@ Atributos privados</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>devuelve false si el valor a asignar sale del intervalo, y true si esta dentro </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                             {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>((dado1&lt;1) || (dado1&gt;6)){</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a>=dado1;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">d1_Lanzamientos</a>++;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classDados.html#a953c93884000f149366557eef5d18c95">d1_sum_valores</a>+=<a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    this-&gt;<a class="code" href="classDados.html#a26a9218af6e7ed56510f048844fc4b98">sync1</a>();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div><div class="ttc" id="classDados_html_a817e5722203b5b4bb97bdea494266435"><div class="ttname"><a href="classDados.html#a817e5722203b5b4bb97bdea494266435">Dados::d1_</a></div><div class="ttdeci">int d1_</div><div class="ttdef"><b>Definition:</b> dados.h:20</div></div>
+<div class="ttc" id="classDados_html_a2da5da0bfa4710efa1bb8980147cace0"><div class="ttname"><a href="classDados.html#a2da5da0bfa4710efa1bb8980147cace0">Dados::d1_Lanzamientos</a></div><div class="ttdeci">int d1_Lanzamientos</div><div class="ttdef"><b>Definition:</b> dados.h:22</div></div>
+<div class="ttc" id="classDados_html_a953c93884000f149366557eef5d18c95"><div class="ttname"><a href="classDados.html#a953c93884000f149366557eef5d18c95">Dados::d1_sum_valores</a></div><div class="ttdeci">int d1_sum_valores</div><div class="ttdef"><b>Definition:</b> dados.h:24</div></div>
+<div class="ttc" id="classDados_html_a26a9218af6e7ed56510f048844fc4b98"><div class="ttname"><a href="classDados.html#a26a9218af6e7ed56510f048844fc4b98">Dados::sync1</a></div><div class="ttdeci">void sync1()</div><div class="ttdoc">actualiza los valores del vector que guarda los ultimos 5 lanzamientos del dado 1 ...</div><div class="ttdef"><b>Definition:</b> dados.cc:101</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1ca54d13215ed1e0eada3aa88c99f37f"></a>
@@ -452,7 +486,11 @@ Atributos privados</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>devuelve false si el valor a asignar sale del intervalo, y true si esta dentro </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                             {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span>((dado2&lt;1) || (dado2&gt;6)){</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a>=dado2;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">d2_Lanzamientos</a>++;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classDados.html#aeaf150f98d9b78d78f33c916fb6e16d0">d2_sum_valores</a>+=<a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    this-&gt;<a class="code" href="classDados.html#adac2f86ee0e27e174c8ee711acc442f5">sync2</a>();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div><div class="ttc" id="classDados_html_ae33b579edb1e1cc50857d689bb4029d8"><div class="ttname"><a href="classDados.html#ae33b579edb1e1cc50857d689bb4029d8">Dados::d2_Lanzamientos</a></div><div class="ttdeci">int d2_Lanzamientos</div><div class="ttdef"><b>Definition:</b> dados.h:23</div></div>
+<div class="ttc" id="classDados_html_a6c49b0383fc4a5defe3b9613519d58b6"><div class="ttname"><a href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">Dados::d2_</a></div><div class="ttdeci">int d2_</div><div class="ttdef"><b>Definition:</b> dados.h:21</div></div>
+<div class="ttc" id="classDados_html_adac2f86ee0e27e174c8ee711acc442f5"><div class="ttname"><a href="classDados.html#adac2f86ee0e27e174c8ee711acc442f5">Dados::sync2</a></div><div class="ttdeci">void sync2()</div><div class="ttdoc">actualiza los valores del vector que guarda los ultimos 5 lanzamientos del dado 2 ...</div><div class="ttdef"><b>Definition:</b> dados.cc:113</div></div>
+<div class="ttc" id="classDados_html_aeaf150f98d9b78d78f33c916fb6e16d0"><div class="ttname"><a href="classDados.html#aeaf150f98d9b78d78f33c916fb6e16d0">Dados::d2_sum_valores</a></div><div class="ttdeci">int d2_sum_valores</div><div class="ttdef"><b>Definition:</b> dados.h:25</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a26a9218af6e7ed56510f048844fc4b98"></a>
@@ -472,7 +510,9 @@ Atributos privados</h2></td></tr>
 
 <p>actualiza los valores del vector que guarda los ultimos 5 lanzamientos del dado 1 </p>
 <p>se realiza el desplazamiento de datos del vector hacia la derecha, con lo que nos deja espacio al principio del vector para el ultimo valor del dado obtenido </p><dl class="section return"><dt>Devuelve</dt><dd>no devuelve nada </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                 {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=3;i&gt;=0;i--){</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classDados.html#ad5a06b29a425c77a0a7850b12393948f">ultimos5D1</a>[i+1]=<a class="code" href="classDados.html#ad5a06b29a425c77a0a7850b12393948f">ultimos5D1</a>[i];</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="classDados.html#ad5a06b29a425c77a0a7850b12393948f">ultimos5D1</a>[0]=<a class="code" href="classDados.html#a817e5722203b5b4bb97bdea494266435">d1_</a>;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div><div class="ttc" id="classDados_html_a817e5722203b5b4bb97bdea494266435"><div class="ttname"><a href="classDados.html#a817e5722203b5b4bb97bdea494266435">Dados::d1_</a></div><div class="ttdeci">int d1_</div><div class="ttdef"><b>Definition:</b> dados.h:20</div></div>
+<div class="ttc" id="classDados_html_ad5a06b29a425c77a0a7850b12393948f"><div class="ttname"><a href="classDados.html#ad5a06b29a425c77a0a7850b12393948f">Dados::ultimos5D1</a></div><div class="ttdeci">int ultimos5D1[5]</div><div class="ttdef"><b>Definition:</b> dados.h:26</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adac2f86ee0e27e174c8ee711acc442f5"></a>
@@ -492,7 +532,9 @@ Atributos privados</h2></td></tr>
 
 <p>actualiza los valores del vector que guarda los ultimos 5 lanzamientos del dado 2 </p>
 <p>se realiza el desplazamiento de datos del vector hacia la derecha, con lo que nos deja espacio al principio del vector para el ultimo valor del dado obtenido </p><dl class="section return"><dt>Devuelve</dt><dd>no devuelve nada </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                 {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=3;i&gt;=0;i--){</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="classDados.html#a98309ff6e2cd0f3f37eaf6cbabf8f174">ultimos5D2</a>[i+1]=<a class="code" href="classDados.html#a98309ff6e2cd0f3f37eaf6cbabf8f174">ultimos5D2</a>[i];</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="classDados.html#a98309ff6e2cd0f3f37eaf6cbabf8f174">ultimos5D2</a>[0]=<a class="code" href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">d2_</a>;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div><div class="ttc" id="classDados_html_a98309ff6e2cd0f3f37eaf6cbabf8f174"><div class="ttname"><a href="classDados.html#a98309ff6e2cd0f3f37eaf6cbabf8f174">Dados::ultimos5D2</a></div><div class="ttdeci">int ultimos5D2[5]</div><div class="ttdef"><b>Definition:</b> dados.h:27</div></div>
+<div class="ttc" id="classDados_html_a6c49b0383fc4a5defe3b9613519d58b6"><div class="ttname"><a href="classDados.html#a6c49b0383fc4a5defe3b9613519d58b6">Dados::d2_</a></div><div class="ttdeci">int d2_</div><div class="ttdef"><b>Definition:</b> dados.h:21</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de los datos miembro</h2>
