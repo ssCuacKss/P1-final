@@ -1,0 +1,4 @@
+
+*.o
+*.a
+dados_unittest
