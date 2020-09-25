@@ -1,1 +1,1 @@
-gnome-open html/files.html
+xdg-open html/files.html || gnome-open html/files.html
